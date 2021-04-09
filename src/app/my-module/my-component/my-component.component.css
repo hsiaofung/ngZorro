@@ -5,3 +5,12 @@ nz-button-group {
   margin-right: 8px;
   margin-bottom: 8px;
 }
+
+.demo-icon > [nz-icon] {
+  font-size: 32px;
+}
+
+.demo-icon > [nz-icon] > img {
+  width: 32px;
+  height: 32px;
+}
