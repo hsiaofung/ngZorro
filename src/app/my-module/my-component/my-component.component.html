@@ -174,8 +174,101 @@
     [nzTwotoneColor]="'red'"
   ></i>
   <div class="demo-icon" style="background-color: black">
-    <i nz-icon style="color: hotpink">
+    <i nz-icon>
       <img src="assets/activation.svg" />
     </i>
   </div>
+  <div class="demo-icon" style="background-color: grey">
+    <i nz-icon nzType="ng-zorro:antd"></i>
+  </div>
 </div>
+
+<nz-divider nzText="with Demo Tooltip"></nz-divider>
+<span nz-tooltip nzTooltipTitle="Hello tooltip"> My Text</span>
+<button
+  nz-button
+  nz-tooltip
+  nzTooltipTitle="myTooltip"
+  nzTooltipPlacement="top"
+>
+  Top
+</button>
+<button
+  nz-button
+  nz-tooltip
+  nzTooltipTitle="myTooltip-top left"
+  nzTooltipPlacement="topLeft"
+>
+  Top Left
+</button>
+<div>
+  <button
+    nz-button
+    nz-tooltip
+    nzTooltipTitle="myTooltip"
+    nzTooltipPlacement="right"
+  >
+    Right
+  </button>
+</div>
+<div style="margin-left: 100px">
+  <button
+    nz-button
+    nz-tooltip
+    nzTooltipTitle="myTooltip"
+    nzTooltipPlacement="left"
+  >
+    Left
+  </button>
+</div>
+<div style="margin-bottom: 50px; margin-left: 60px">
+  <button
+    nz-button
+    nz-tooltip
+    nzTooltipTitle="myTooltip"
+    nzTooltipPlacement="bottom"
+  >
+    Down
+  </button>
+</div>
+<div>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe recusandae hic
+  in, ut architecto est velit soluta, explicabo doloremque qui aperiam,
+  cupiditate asperiores repellendus quas totam dolores voluptatibus odit
+  blanditiis.
+</div>
+<div
+  style="
+    margin-left: 60px;
+    clear: both;
+    margin-bottom: 8px;
+    padding-bottom: 50px;
+  "
+>
+  <button
+    nzTooltipTitle="prompt text"
+    nzTooltipPlacement="bottomLeft"
+    nz-button
+    nz-tooltip
+  >
+    BL
+  </button>
+  <button
+    nzTooltipTitle="prompt text"
+    nzTooltipPlacement="bottom"
+    nz-button
+    nz-tooltip
+  >
+    Bottom
+  </button>
+  <button
+    nzTooltipTitle="prompt text"
+    nzTooltipPlacement="bottomRight"
+    nz-button
+    nz-tooltip
+  >
+    BR
+  </button>
+</div>
+
+
