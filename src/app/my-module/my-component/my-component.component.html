@@ -238,37 +238,95 @@
   blanditiis.
 </div>
 <div
+  class="tooltip-demo"
   style="
     margin-left: 60px;
     clear: both;
     margin-bottom: 8px;
+    margin-top: 100px;
     padding-bottom: 50px;
   "
 >
   <button
     nzTooltipTitle="prompt text"
-    nzTooltipPlacement="bottomLeft"
+    nzTooltipPlacement="topLeft"
     nz-button
     nz-tooltip
+    nzTooltipVisible="true"
+    nzTooltipOverlayClassName="KKKK"
   >
     BL
   </button>
   <button
     nzTooltipTitle="prompt text"
-    nzTooltipPlacement="bottom"
+    nzTooltipPlacement="top"
     nz-button
     nz-tooltip
+    nzTooltipVisible="true"
+    nzTooltipOverlayClassName="color-red"
   >
     Bottom
   </button>
   <button
     nzTooltipTitle="prompt text"
-    nzTooltipPlacement="bottomRight"
+    nzTooltipPlacement="topRight"
     nz-button
     nz-tooltip
+    nzTooltipVisible="true"
   >
     BR
   </button>
 </div>
 
+<nz-divider nzText="with Demo Dropmenu"></nz-divider>
+<nz-button-group>
+  <button nz-button nz-tooltip nzTooltipTitle="tooltipTitle" (click)="log()">
+    DropDown
+  </button>
+  <button nz-button nz-dropdown nzTrigger="click" [nzDropdownMenu]="menu1">
+    <i nz-icon nzType="down"></i>
+  </button>
+</nz-button-group>
+<nz-dropdown-menu #menu1="nzDropdownMenu">
+  <ul nz-menu nzSelectable>
+    <li nz-menu-item>item 1</li>
+    <li nz-menu-item>item 2</li>
+    <li nz-menu-item>item 3</li>
+    <li nz-menu-divider></li>
+    <li nz-menu-item>item 4</li>
+    <li nz-menu-item>item 5</li>
+    <li nz-menu-item>item 6</li>
+  </ul>
+</nz-dropdown-menu>
 
+<nz-divider nzText="with right click"></nz-divider>
+
+<button
+  nz-button
+  nz-tooltip
+  nzTooltipTitle="tooltipTitle"
+  (click)="log()"
+  (contextmenu)="contextMenu($event, myMenu)"
+>
+  DropDown
+</button>
+
+<nz-dropdown-menu #myMenu="nzDropdownMenu">
+  <ul nz-menu>
+    <li nz-menu-item>1st menu item</li>
+    <li nz-menu-item>2nd menu item</li>
+    <li nz-menu-item nzDisabled>disabled menu item</li>
+    <li nz-submenu nzTitle="sub menu">
+      <ul>
+        <li nz-menu-item>3rd menu item</li>
+        <li nz-menu-item>4th menu item</li>
+      </ul>
+    </li>
+    <li nz-submenu nzDisabled nzTitle="disabled sub menu">
+      <ul>
+        <li nz-menu-item>3rd menu item</li>
+        <li nz-menu-item>4th menu item</li>
+      </ul>
+    </li>
+  </ul>
+</nz-dropdown-menu>

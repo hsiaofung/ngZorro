@@ -14,3 +14,17 @@ nz-button-group {
   width: 32px;
   height: 32px;
 }
+.tooltip-demo button {
+  margin-right: 80px;
+}
+.color-red {
+  color: red;
+  background-color: red;
+}
+.context-area {
+  background: #f7f7f7;
+  color: #777;
+  text-align: center;
+  height: 200px;
+  line-height: 200px;
+}

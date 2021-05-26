@@ -1,6 +1,7 @@
 import { MyModuleModule } from './my-module/my-module.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { NavigationModule } from './navigation/navigation.module';
 
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
@@ -21,6 +22,7 @@ registerLocaleData(zh);
     HttpClientModule,
     BrowserAnimationsModule,
     MyModuleModule,
+    NavigationModule,
   ],
   providers: [{ provide: NZ_I18N, useValue: zh_TW }],
   bootstrap: [AppComponent],
